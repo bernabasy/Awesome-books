@@ -59,3 +59,17 @@ const books = Store.getBooks();
   localStorage.setItem('books', JSON.stringify(books));
    },
 };
+
+document.addEventListener('DOMContentLoaded', UI.displayBooks);
+const Form = document.querySelector('#book-form');
+Form.addEventListener('submit', (e)=> {
+e.preventDefault();
+
+const title = document.querySelector('#title').value;
+const author = document.querySelector('#author').value;
+
+ const book = {
+    author : author,
+    title : title,
+   }
+});
