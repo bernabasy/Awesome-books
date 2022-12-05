@@ -28,4 +28,34 @@ const UI = {
  },
 };
 
-// Store
+// Store books details
+const Store = {
+    getBooks() {
+       let books;
+       if(localStorage.getItem('books') === null){
+           books =[];
+       } else{
+        books = JSON.parse(localStorage.getItem('books'));
+      }
+      return books;
+   },
+    
+    addBook(book) {
+const books = Store.getBooks();
+ books.push(book);
+ localStorage.setItem('books', JSON.stringify(books));
+   },
+
+   removeBook(author){
+  const books = Store.getBooks();
+  let index = 0;
+  books.filter(book => {
+   if(book.author != author)
+    index ++;
+    else
+    return;
+  } )
+  books.splice(index, 1);
+  localStorage.setItem('books', JSON.stringify(books));
+   },
+};
