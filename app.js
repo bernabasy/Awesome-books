@@ -78,3 +78,8 @@ UI.addBookToList(book);
 Store.addBook(book);
 UI.clearfields();
 
+document.querySelector('#book-list').addEventListener('click', (e) =>{
+    Store.removeBook(e.target.parentElement.previousElementSibling.innerHTML);
+     UI.deleteBook(e.target);  
+ });
+ 
