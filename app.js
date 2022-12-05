@@ -72,11 +72,13 @@ e.preventDefault();
     author : author,
     title : title,
    }
-});
 
-UI.addBookToList(book);
-Store.addBook(book);
-UI.clearfields();
+   UI.addBookToList(book);
+
+   Store.addBook(book);
+
+   UI.clearfields();
+});
 
 document.querySelector('#book-list').addEventListener('click', (e) =>{
     Store.removeBook(e.target.parentElement.previousElementSibling.innerHTML);
