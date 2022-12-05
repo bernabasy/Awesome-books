@@ -1,3 +1,7 @@
+const title = document.querySelector('#title').value;
+const author = document.querySelector('#author').value;
+const Form = document.querySelector('#book-form');
+
 const UI = {
     displayBooks(){
     const books = Store.getBooks();
@@ -61,15 +65,16 @@ const books = Store.getBooks();
 };
 
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
-const Form = document.querySelector('#book-form');
 Form.addEventListener('submit', (e)=> {
 e.preventDefault();
-
-const title = document.querySelector('#title').value;
-const author = document.querySelector('#author').value;
 
  const book = {
     author : author,
     title : title,
    }
 });
+
+UI.addBookToList(book);
+Store.addBook(book);
+UI.clearfields();
+
