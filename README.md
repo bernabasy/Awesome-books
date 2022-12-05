@@ -55,7 +55,7 @@
 
 > Here is a link to deployed project.
 
-- [Live Demo Link](https://github.com/bernabasy/Awesome-books.git)
+- [Live Demo Link]([https://github.com/bernabasy/Awesome-books.git](https://bernabasy.github.io/Awesome-books/))
 
 > Here is a link to loom video.
 
