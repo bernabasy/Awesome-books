@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <img src="images/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
   <br/>
 
   <h3><b>Awesome books</b></h3>
@@ -55,10 +55,7 @@
 
 > Here is a link to deployed project.
 
-- [Live Demo Link]([https://github.com/bernabasy/Awesome-books.git](https://bernabasy.github.io/Awesome-books/))
-
-> Here is a link to loom video.
-
+- [Live Demo Link](https://bernabasy.github.io/Awesome-books/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
