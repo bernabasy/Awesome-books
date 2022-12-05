@@ -19,8 +19,7 @@ const Store = {
     const books = Store.getBooks();
     let index = 0;
     books.filter((book) => {
-      if (book.author !== author) 
-        {index =+ ; }
+      if (book.author !== author) { index = +1; }
       return books;
     });
     books.splice(index, 1);
