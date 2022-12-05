@@ -1,7 +1,3 @@
-const title = document.querySelector('#title').value;
-const author = document.querySelector('#author').value;
-const Form = document.querySelector('#book-form');
-
 const UI = {
     displayBooks(){
     const books = Store.getBooks();
@@ -15,7 +11,7 @@ const UI = {
     row.innerHTML = `
     <td>${book.title}</td>
     <td>${book.author}</td>
-    <td><a hraf="#" class="btn btn-sm btn-danger delete">remove</a></td>
+    <td><a href="#" class="btn btn-sm btn-danger delete">remove</a></td>
     `;
     list.appendChild(row);
  },
@@ -26,13 +22,12 @@ const UI = {
  }
  },
 
-    clearfields(){
+    clearField(){
     document.querySelector('#title').value = '';
     document.querySelector('#author').value = '';
  },
 };
 
-// Store books details
 const Store = {
     getBooks() {
        let books;
@@ -65,8 +60,12 @@ const books = Store.getBooks();
 };
 
 document.addEventListener('DOMContentLoaded', UI.displayBooks);
+const Form = document.querySelector('#book-form');
 Form.addEventListener('submit', (e)=> {
 e.preventDefault();
+
+const title = document.querySelector('#title').value;
+const author = document.querySelector('#author').value;
 
  const book = {
     author : author,
@@ -77,7 +76,7 @@ e.preventDefault();
 
    Store.addBook(book);
 
-   UI.clearfields();
+   UI.clearField();
 });
 
 document.querySelector('#book-list').addEventListener('click', (e) =>{
