@@ -1,5 +1,12 @@
-const Store = {
-  getBooks() {
+class Book {
+  constructor(title, author) {
+      this.title = title;
+      this.author = author;
+  }
+}
+
+class Store  {
+  static getBooks() {
     let books;
     if (localStorage.getItem('books') === null) {
       books = [];
@@ -7,15 +14,15 @@ const Store = {
       books = JSON.parse(localStorage.getItem('books'));
     }
     return books;
-  },
+  }
 
-  addBook(book) {
+  static addBook(book) {
     const books = Store.getBooks();
     books.push(book);
     localStorage.setItem('books', JSON.stringify(books));
-  },
+  }
 
-  removeBook(author) {
+  static removeBook(author) {
     const books = Store.getBooks();
     let index = 0;
     books.filter((book) => {
@@ -24,8 +31,9 @@ const Store = {
     });
     books.splice(index, 1);
     localStorage.setItem('books', JSON.stringify(books));
-  },
+  }
 };
+
 const UI = {
   displayBooks() {
     const books = Store.getBooks();
@@ -64,10 +72,7 @@ Form.addEventListener('submit', (e) => {
   const title = document.querySelector('#title').value;
   const author = document.querySelector('#author').value;
 
-  const book = {
-    author,
-    title,
-  };
+  const book = new Book(title, author);
 
   UI.addBookToList(book);
 
