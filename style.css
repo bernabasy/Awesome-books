@@ -2,6 +2,17 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+hr {
+  border: 1px solid #000;
+  width: 10%;
+}
+
 #book-list tr:nth-child(odd) {
   background-color: #f2f2f2;
 }
