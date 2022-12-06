@@ -16,8 +16,8 @@ class Book {
 
     row.innerHTML = `
     <td>${book.title}</td>
-    <td>${book.author}</td>
-    <td><a href="#" class="btn btn-sm btn-danger delete">remove</a></td>
+    <td class="text-center">${book.author}</td>
+    <td><a href="#" class="btn btn-sm btn-danger delete float-end">remove</a></td>
     `;
     list.appendChild(row);
   }
