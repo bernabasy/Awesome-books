@@ -15,8 +15,8 @@ class Book {
     const row = document.createElement('tr');
 
     row.innerHTML = `
-    <td>${book.title}</td>
-    <td class="text-center">${book.author}</td>
+    <td>"${book.title}" by ${book.author}</td>
+    <td class="d-none">${book.author}</td>
     <td><a href="#" class="btn btn-sm btn-danger delete float-end">remove</a></td>
     `;
     list.appendChild(row);
