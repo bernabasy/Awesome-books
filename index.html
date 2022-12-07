@@ -14,21 +14,21 @@
       <nav class="navigation">
         <p>Awesome Books</p>
         <ul class="nav-list">
-          <li id="list">List</li>
-          <li id="add-new">Add new</li>
-          <li id="contact">Contact</li>
+          <li ><a href="#lists" id="list">List</a></li>
+          <li ><a href="#adds" id="add-new">Add new</a></li>
+          <li ><a href="#contactes" id="contact">Contact</a></li>
         </ul>
       </nav>
       <p id="date"></p>
     </header>
     <main>
-      <section class="list">
+      <section class="list" id="lists">
         <h2 class="text-center mb-2">All awesome Books</h2>
         <table class="table">
           <tbody id="book-list"></tbody>
         </table>
       </section>
-      <section class="add">
+      <section class="add" id="adds">
         <form id="book-form" class="m-4">
           <h4 class="main-tittle text-center">Add a new book</h4>
           <div class="form-group mb-2">
@@ -40,7 +40,7 @@
           <input type="submit" value="add book" class="mt-2 float-end btn-submit btn btn-success">
         </form> 
       </section>
-      <section class="contact">
+      <section class="contact" id="contactes">
         <h1 class="heading">Contact information</h1>
         <p id="p">Do you have any questions or you just want to say "Hello"? <br> You can reach out to us!</p>
         <ul id="co-ul" class="co-ul">
