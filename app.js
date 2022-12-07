@@ -82,3 +82,8 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   Book.removeBook(e.target.parentElement.previousElementSibling.innerHTML);
   Book.deleteBook(e.target);
 });
+
+function displayDate() {
+  document.getElementById("date").innerHTML = Date();
+}
+window.addEventListener("load", displayDate);
