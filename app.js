@@ -1,3 +1,9 @@
+const bookList = document.querySelector('#list');
+const addBook = document.querySelector('#add-new');
+const contact = document.querySelector('#contact');
+const addSection = document.querySelector('.add');
+const contactSection = document.querySelector('.contact');
+const listSection = document.querySelector('.list');
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -87,3 +93,19 @@ function displayDate() {
   document.getElementById("date").innerHTML = Date();
 }
 window.addEventListener("load", displayDate);
+bookList.addEventListener('click', (e) => {
+  contactSection.style.display = 'none';
+  addSection.style.display = 'none';
+  listSection.style.display = 'block';
+});
+addBook.addEventListener('click', (e) => {
+  contactSection.style.display = 'none';
+  addSection.style.display = 'block';
+  listSection.style.display = 'none';
+});
+contact.addEventListener('click', (e) => {
+  contactSection.style.display = 'block';
+  addSection.style.display = 'none';
+  listSection.style.display = 'none';
+  
+});
