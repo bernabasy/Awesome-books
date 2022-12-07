@@ -90,22 +90,27 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
 });
 
 function displayDate() {
-  document.getElementById("date").innerHTML = Date();
+  document.getElementById('date').innerHTML = Date();
 }
-window.addEventListener("load", displayDate);
-bookList.addEventListener('click', (e) => {
+const onload = () => {
+  contactSection.style.display = 'none';
+  addSection.style.display = 'none';
+  listSection.style.display = 'block';
+};
+window.addEventListener('load', onload());
+window.addEventListener('load', displayDate);
+bookList.addEventListener('click', () => {
   contactSection.style.display = 'none';
   addSection.style.display = 'none';
   listSection.style.display = 'block';
 });
-addBook.addEventListener('click', (e) => {
+addBook.addEventListener('click', () => {
   contactSection.style.display = 'none';
   addSection.style.display = 'block';
   listSection.style.display = 'none';
 });
-contact.addEventListener('click', (e) => {
+contact.addEventListener('click', () => {
   contactSection.style.display = 'block';
   addSection.style.display = 'none';
   listSection.style.display = 'none';
-  
 });
