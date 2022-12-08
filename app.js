@@ -109,7 +109,7 @@ addBook.addEventListener('click', () => {
   bookList.classList.remove('active');
   contact.classList.remove('active');
   contactSection.style.display = 'none';
-  addSection.style.display = 'block';
+  addSection.style.display = 'flex';
   addBook.classList.add('active');
   listSection.style.display = 'none';
 });
@@ -117,7 +117,7 @@ addBook.addEventListener('click', () => {
 contact.addEventListener('click', () => {
   addBook.classList.remove('active');
   bookList.classList.remove('active');
-  contactSection.style.display = 'block';
+  contactSection.style.display = 'flex';
   addSection.style.display = 'none';
   listSection.style.display = 'none';
   contact.classList.add('active');
