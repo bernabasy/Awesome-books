@@ -1,9 +1,8 @@
 <a name="readme-top"></a>
 
-<div align="center">
+![microverse baby!](https://img.shields.io/badge/Microverse-blueviolet)
 
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
+<div align="center">
 
   <h3><b>Awesome books</b></h3>
 
