@@ -14,6 +14,15 @@ header {
   padding-bottom: 2%;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.active {
+  color: #0000ff;
+}
+
 .navigation {
   border: 2px solid #000;
   display: flex;
