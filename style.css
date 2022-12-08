@@ -94,7 +94,9 @@ footer {
   padding: 20px;
   border: 2px solid #000;
   align-items: center;
-  margin-bottom: 0;
+  margin-bottom: 10px;
+  margin-top: 400px;
+  bottom: 0;
   gap: 20px;
   width: 100%;
 }
