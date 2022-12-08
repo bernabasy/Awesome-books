@@ -96,21 +96,29 @@ const onload = () => {
   contactSection.style.display = 'none';
   addSection.style.display = 'none';
   listSection.style.display = 'block';
+  bookList.classList.add('active');
+  contact.classList.remove('active');
+  addBook.classList.remove('active');
 };
-window.addEventListener('load', onload());
+
+window.addEventListener('load', onload);
 window.addEventListener('load', displayDate);
-bookList.addEventListener('click', () => {
-  contactSection.style.display = 'none';
-  addSection.style.display = 'none';
-  listSection.style.display = 'block';
-});
+bookList.addEventListener('click', onload);
+
 addBook.addEventListener('click', () => {
+  bookList.classList.remove('active');
+  contact.classList.remove('active');
   contactSection.style.display = 'none';
   addSection.style.display = 'block';
+  addBook.classList.add('active');
   listSection.style.display = 'none';
 });
+
 contact.addEventListener('click', () => {
+  addBook.classList.remove('active');
+  bookList.classList.remove('active');
   contactSection.style.display = 'block';
   addSection.style.display = 'none';
   listSection.style.display = 'none';
+  contact.classList.add('active');
 });
