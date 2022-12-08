@@ -75,6 +75,20 @@ hr {
   background-color: #f2f2f2;
 }
 
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
 footer {
   display: flex;
   padding: 20px;
