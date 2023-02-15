@@ -91,7 +91,7 @@ To run project, run the following command:
 👤 Bernabas yosef
 
  GitHub: [@githubhandle](https://github.com/bernabasy)
- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bernabas-yosef-74b571186)
+ LinkedIn: [LinkedIn](https://www.linkedin.com/in/bernabasjosef/)
 
 👤 Thomas Obuya
 
